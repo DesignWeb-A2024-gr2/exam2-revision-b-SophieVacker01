@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title></title>
-
+        <title>Révison 2 Examen 2</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <script defer src="assets/js/script.js"></script>
-
-
     </head>
 
     <body>
@@ -20,15 +14,18 @@
             <h1 class="titre-principale">Activer un produit sur vapeur</h1>
 
             <div class="col-gauche">
-                <form id="form-activation">
+                <form id="form-activation" method="post" action="https://designweb-production.up.railway.app/examen2/revB" onSubmit="return ValidationFormat()">
 
-                    <div id="message-erreur" class="hidden"></div>
+                    <div
+                        id="message_erreur" 
+                        class="hidden">
+                    </div>
 
                     <h2 class="sous-titre">Saisissez votre code produit pour l’activer sur Steam</h2>
 
                     <div class="zone-saisie">
-                        <label for='cle-activation' class="label-activation texte-darker">Code produit</label>
-                        <input type='text' id='cle-activation' name='cle_activation'>
+                        <label for='cle_activation' class="label-activation texte-darker">Code produit</label>
+                        <input type='text' id='cle_activation' name='cle_activation'>
                         <button type="submit" class="bouton-activation">Activer</button>
                     </div>
                     
@@ -59,9 +56,6 @@
                     </ul>
                 </div>    
             </div>
-            
-
         </div>
     </body>
-
 </html>
